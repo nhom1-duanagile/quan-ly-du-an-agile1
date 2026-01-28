@@ -6,14 +6,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-    public class DatabaseHelper extends SQLiteOpenHelper {
-        private static final String DB_NAME = "UserDB.db";
-        private static final int DB_VERSION = 1;
-
-        public static final String TABLE_USER = "users";
-        public static final String ID = "id";
-        public static final String USERNAME = "username";
-        public static final String PASSWORD = "password";
+public class DatabaseHelper extends SQLiteOpenHelper {
+    private static final String DB_NAME = "UserDB.db";
+    private static final int DB_VERSION = 1;
+    public static final String TABLE_USER = "users";
+    public static final String ID = "id";
+    public static final String USERNAME = "username";
+    public static final String PASSWORD = "password";
 
     public DatabaseHelper(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
